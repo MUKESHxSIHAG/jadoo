@@ -4,6 +4,7 @@ import Navigation from '../assets/svg/Navigation.svg'
 import Europe from '../assets/png/Europe.png'
 import Rome from '../assets/png/London.jpg'
 import Spring from '../assets/svg/Spring.svg'
+import { Col, Row } from 'react-bootstrap'
 
 const Topdestinations = () => {
   return (
@@ -13,8 +14,8 @@ const Topdestinations = () => {
         <p className='ff-volkhov fw-700 fs-50 fc-extra-dark mt-1 text-center'>Top Destinations</p>
       </div>
       <div className='pt-5'>
-        <div className="row justify-content-center align-items-center flex-col">
-          <div className="col-12 col-md-6 col-lg-4  " data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="400">
+        <Row className="justify-content-center align-items-center flex-col">
+          <Col lg={4} md={6} data-aos="fade-down-right" data-aos-easing="linear" data-aos-duration="400">
             <img className='round-24 w-75' src={Building} alt="Building" />
             <div className="card-2 card-pos">
               <div className='d-flex justify-content-between ps-3 pe-3 pt-4'>
@@ -26,8 +27,8 @@ const Topdestinations = () => {
                 <p className='ff-poppins fw-500 fs-16 mb-0 fc-secondary'>10 Days Trip</p>
               </div>
             </div>
-          </div>
-          <div className="col-12  col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
+          </Col>
+          <Col lg={4} md={6} data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
             <img className='round-24 w-75' src={Rome} alt="Building" />
             <div className="card-2 card-pos">
               <div className='d-flex justify-content-between ps-3 pe-3 pt-4'>
@@ -39,8 +40,8 @@ const Topdestinations = () => {
                 <p className='ff-poppins fw-500 fs-16 mb-0 fc-secondary'>12 Days Trip</p>
               </div>
             </div>
-          </div>
-          <div className=" col-12 col-md-6 col-lg-4" data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="400">
+          </Col>
+          <Col lg={4} md={6} data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="400">
             <img className='round-24 w-75' src={Europe} alt="Building" />
             <div className="card-2 card-pos">
               <div className='d-flex justify-content-between ps-3 pe-3 pt-4'>
@@ -52,8 +53,8 @@ const Topdestinations = () => {
                 <p className='ff-poppins fw-500 fs-16 mb-0 fc-secondary'>28 Days Trip</p>
               </div>
             </div>
-          </div>
-        </div>
+          </Col>
+        </Row>
 
       </div>
     </section>

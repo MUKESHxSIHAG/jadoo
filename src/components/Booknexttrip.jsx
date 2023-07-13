@@ -10,11 +10,12 @@ import Hugebuilding from '../assets/svg/Hugebuilding.svg'
 import Heart from '../assets/svg/Heart.svg'
 import Temple from '../assets/png/Temple.png'
 import Gradient from '../assets/svg/Gradient.svg'
+import { Row, Col } from 'react-bootstrap'
 const Booknexttrip = () => {
   return (
     <section className=''>
-      <div className="row align-items-center">
-        <div className='col-lg-6 col-12' data-aos="fade-down-right">
+      <Row className="align-items-center">
+        <Col lg={6} data-aos="fade-down-right">
           <div className='flex-col dis-flex jcc aic'>
             <h2 className='ff-poppins fw-600 fs-18 fc-secondary'>Easy and Fast</h2>
             <p className='fs-50 ff-volkhov fw-700 fc-extra-dark max-511 txt-center'>Book your next trip in 3 easy steps</p>
@@ -43,8 +44,8 @@ const Booknexttrip = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center position-relative mt-40" data-aos="fade-down-left">
+        </Col>
+        <Col lg={6} className="d-flex flex-column justify-content-center align-items-center position-relative mt-40" data-aos="fade-down-left">
           <div className='gradient-position position-absolute'>
 
           </div>
@@ -80,9 +81,9 @@ const Booknexttrip = () => {
             </div>
 
           </div>
-        </div>
+        </Col>
 
-      </div>
+      </Row>
 
     </section>
   )

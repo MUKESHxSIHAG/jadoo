@@ -83,20 +83,25 @@
 }
 
 .header-btn:hover {
-  background: var(--yellow, #ffffff);
-  color: #F1A501;
-  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+  box-shadow: 0px 8px 16px 0px rgba(241, 165, 1, 1);
 }
 
 .orange-line-position {
   transform: translateY(11rem);
   left: 17rem;
 }
-
+.play-btn{
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: #DF6951;
+}
+.playy{
+  right: -2px;
+  position: relative;
+}
 .play-btn:hover {
-  box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 1);
-  background: transparent;
-  cursor: pointer;
+  box-shadow: 0px 6px 15px 0px rgba(223, 105, 81, 1);
 }
 
 .flying-planee {
@@ -108,6 +113,10 @@
 
 .img-scale {
   scale: 1.3;
+}
+.instagram:hover{
+background-color: conic-gradient(from 180deg at 50.00% 50.00%, #B8D2F1 0deg, #F289AA 60.00000178813934deg, #C68BF0 106.09081864356995deg, #D164DA 153.7500035762787deg, #C963E8 221.24999284744263deg, #BFC2E8 258.75deg, #FFC999 288.7499928474426deg, #D0D8C9 315deg, #BAD0F1 334.13365602493286deg, #CED8CB 358.9677572250366deg, rgba(255, 255, 255, 0.00) 360deg);
+  /* filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10)); */
 }
 
 @keyframes run {
@@ -133,9 +142,11 @@ select {
   outline: none;
   background-color: transparent;
 }
-.pic-transform{
-transform: translateY(60px);
+
+.pic-transform {
+  transform: translateY(60px);
 }
+
 .cloudImg {
   top: 0;
   right: 0;
@@ -145,7 +156,7 @@ transform: translateY(60px);
 
 .trans-10 {
   transform: translateY(-32rem);
-  right: 25rem;
+  left: 1rem;
 }
 
 .trans-11 {
@@ -174,8 +185,24 @@ transform: translateY(60px);
 
 .mt-15 {
   margin-top: 15px;
-}
 
+}
+.orange-card{
+  border-radius: 30px 0px 10px 0px;
+    background: #DF6951;
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    bottom: 60px;
+    position: relative;
+    right: 40px;
+    z-index: -1;
+    
+}
+.orange-hover:hover .orange-card{
+  opacity: 1;
+
+}
 .hovCard:hover {
   border-radius: 36px;
   background: white;
@@ -188,7 +215,7 @@ transform: translateY(60px);
 .card-2 {
   border-radius: 0px 0px 24px 24px;
   background: white;
-  width: 100%;
+  width: 75%;
   height: 130px;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
@@ -403,7 +430,7 @@ input {
 .trans-telegram {
   transform: translateY(-2rem);
   position: absolute;
-  left: 69rem;
+  right: -25px;
   z-index: 1;
 }
 
@@ -450,6 +477,19 @@ input {
 .whitenowrap {
   white-space: nowrap;
 }
+.circlebg{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.10));
+}
+.circlebg:hover {
+background: var(--angular, conic-gradient(from 180deg at 50.00% 50.00%, #B8D2F1 0deg, #F289AA 60.00000178813934deg, #C68BF0 106.09081864356995deg, #D164DA 153.7500035762787deg, #C963E8 221.24999284744263deg, #BFC2E8 258.75deg, #FFC999 288.7499928474426deg, #D0D8C9 315deg, #BAD0F1 334.13365602493286deg, #CED8CB 358.9677572250366deg, rgba(255, 255, 255, 0.00) 360deg));
+}
+.insta:hover path{
+  fill: white;
+}
 
 .gap-80 {
   gap: 80px;
@@ -479,9 +519,10 @@ input {
   .gradient-position {
     display: none;
   }
-    .img-scale {
-      scale: none;
-    }
+
+  .img-scale {
+    scale: none;
+  }
 
 }
 
@@ -497,12 +538,12 @@ input {
     z-index: -1;
   }
 
-  .trans-telegram {
+  /* .trans-telegram {
     transform: translateY(-2rem);
     position: absolute;
     left: 62rem;
     z-index: 1;
-  }
+  } */
 
   .small-card {
     width: 150px;
@@ -566,10 +607,7 @@ input {
     z-index: -1;
   }
 
-  .trans-telegram {
-    display: none;
-  }
-
+  
 }
 
 @media (max-width:992px) {
@@ -588,7 +626,7 @@ input {
 
   .trans-11 {
     transform: translateY(-67rem);
-    left:48rem;
+    left: 48rem;
     z-index: -1;
   }
 
@@ -725,6 +763,9 @@ input {
   input {
     background-color: #DFD7F9;
   }
+    .trans-telegram {
+      display: none;
+    }
 
 
 }

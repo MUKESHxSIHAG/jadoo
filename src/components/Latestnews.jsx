@@ -5,7 +5,7 @@ import Stars from '../assets/png/Stars.png'
 
 const Latestnews = () => {
   return (
-    <section className='position-relative' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
+    <section className='position-relative mb-5' data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">
       <img className='trans-telegram' src={Telegram} alt="Telegram" />
       <div className='bg-img pb-78 d-flex flex-column justify-content-center align-items-center mt-149'>
         <div className='d-flex justify-content-center align-items-center'>

@@ -15,6 +15,9 @@ import Latestnews from './components/Latestnews';
 import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Container } from 'react-bootstrap';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   useEffect(() => {
@@ -24,7 +27,7 @@ function App() {
     <div className='position-relative overflow-hidden'>
       <img className='cloudImg w-40 ' src={Herocloud} alt="Cloud" />
       
-      <div className='my_container'>
+      <Container>
         <Jadoopage />
         <HeroSection />
         <Bestservices />
@@ -35,7 +38,7 @@ function App() {
         <Latestnews />
         <Footer />
 
-      </div>
+      </Container>
     </div>
   
   )
